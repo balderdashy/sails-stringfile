@@ -6,6 +6,13 @@ This is one part of the effort towards making Sails more accessible to non-nativ
 
 
 
+## How This Module Works
+
+These files are here for future use-- this project is an early-stage work in progress.
+
++ Environment variables are used to determine a user's locale.  (defaults to English)
+
+
 ## Usage
 
 
@@ -22,15 +29,31 @@ console.log(localizedMessage);
 ```
 
 
-## Status
+## Languages
 
-These files are here for future use-- this project is an early-stage work in progress.
+Current language support _targets_ are:
+
++ English
++ French
++ Spanish
++ Traditional Chinese
++ German
+
+
+## How Can I Help?
 
 + First, the existing strings need to be pulled out of sails core, generators, hooks, and adapters.
 
 + Then, those strings can be translated into different languages here.
 
-+ Environment variables are used to determine a user's locale.  (defaults to English)
+
+
+
+
+
+
+
+> (please send a PR if you have a request and we'll add it to this list!)
 
 ## License
 
