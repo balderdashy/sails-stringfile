@@ -39,21 +39,38 @@ Current language support _targets_ are:
 + Traditional Chinese
 + German
 
+> (please send a PR if you have a request and we'll add it to this list!)
+
+
+
+
+
 
 ## How Can I Help?
 
-+ First, the existing strings need to be pulled out of sails core, generators, hooks, and adapters.
++ The existing strings need to be pulled out of log messages and errors in:
+  + sails core
+  + anchor core
+  + waterline core
+  + sails-generate-*
+  + sails-hook-*
+  + sails-adapter-* (adapters)
 
-+ Then, those strings can be translated into different languages here.
++ Code comments and other support files (like README) in newly generated sails modules (or a new project) should be pulled out into the generator scope and brought in using the same mechanism.  This is only relevant for generators:
+  + sails-generate-new
+  + sails-generate-frontend
+  + sails-generate-backend
+  + sails-generate-views
+  + sails-generate-gruntfile
+  + sails-generate-controller
+  + sails-generate-model
+  + sails-generate-generator
+
++ A stringfile needs to be created in the `locales` in this repository for each language we want to support, mapping the string keys to a reasonable log message in the target language (the English stringfile is a good reference to see how a particular type of message should be worded, etc.).
 
 
 
 
-
-
-
-
-> (please send a PR if you have a request and we'll add it to this list!)
 
 ## License
 
