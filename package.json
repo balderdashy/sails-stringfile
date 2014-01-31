@@ -2,7 +2,7 @@
   "name": "sails-stringfile",
   "version": "0.0.1",
   "description": "translated/localized stringfiles containing messages from Sails core and dependencies",
-  "main": "gettext.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/balderdashy/sails-stringfile/issues"
   },
-  "homepage": "https://github.com/balderdashy/sails-stringfile"
+  "homepage": "https://github.com/balderdashy/sails-stringfile",
+  "dependencies": {
+    "colors": "*"
+  }
 }

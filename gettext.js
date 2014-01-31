@@ -74,5 +74,11 @@ function _deepValue (object, path) {
 			val = val[part];
 		}
 	}
+
+	// Try [0] if an object remains
+	if (typeof val === 'object') {
+		if (typeof val[0] === 'string') val = val[0];
+	}
+	
 	return val;
 }
