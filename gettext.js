@@ -29,18 +29,29 @@ module.exports = function getString (keypath, args) {
 	// Just to be safe, check that there are no '/'
 	// (in case an attacker attempts to use environment
 	// variables to load malicious code)
-	if (locale.match(/[^\/]+/)) return util.format('INVALID LOCALE: %s',locale);
+	if (locale.match(/[\/]+/)) return util.format('INVALID LOCALE: %s',locale);
 
-	var stringfile;
+	// TODO: do something smarter here to determine the proper stringfile
+	if (locale.match('en')) {
+		locale = 'en';
+	}
+
+	var stringfile, pathToLocale;
 	try {
-		var pathToLocale = path.resolve(__dirname, './locales/',locale);
+		pathToLocale = path.resolve(__dirname, './locales/',locale);
 		stringfile = require( pathToLocale );
 	}
 	catch(e) {
-		return util.format(
-		'ERROR LOADING LOCALE: '+
-		'Unable to find stringfile for locale `%s`',
-		locale);
+
+		// In the event of an unresolvable locale,
+		// fail silently and default to english
+		pathToLocale = path.resolve(__dirname, './locales/en');
+		stringfile = require( pathToLocale );
+
+		// return util.format(
+		// 'ERROR LOADING LOCALE: '+
+		// 'Unable to find stringfile for locale `%s`',
+		// locale);
 	}
 
 	var strtemplate = _deepValue(stringfile, keypath);
