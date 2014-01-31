@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/balderdashy/sails-stringfile",
   "dependencies": {
-    "colors": "*"
+    "colors": "*",
+    "lodash": "~2.4.1"
   }
 }
