@@ -1,8 +1,9 @@
 /**
  * Module dependencies
  */
-var _ = require('lodash'),
-	util = require('util');
+var _ = require('lodash')
+	, logMoreInfoLink = require('./links').logMoreInfoLink
+	, util = require('util');
 
 
 //
