@@ -1,6 +1,6 @@
 {
   "name": "sails-stringfile",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "translated/localized stringfiles containing messages from Sails core and dependencies",
   "main": "index.js",
   "scripts": {
