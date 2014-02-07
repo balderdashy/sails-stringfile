@@ -28,5 +28,13 @@ module.exports = {
 		if (IS_MACOS) {
 			log('    (⌘ + double-click to open links from terminal)'.grey);
 		}
+		module.exports.terminalLinkHelp(log);
+	},
+
+	terminalLinkHelp: function (log) {
+		log = log || console.log;
+		if (IS_MACOS) {
+			log('(⌘ + double-click to open links from terminal)'.grey);
+		}
 	}
 };

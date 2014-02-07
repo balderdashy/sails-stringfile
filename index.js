@@ -15,5 +15,6 @@ _.extend(gettext, {
 	logDeprecationNotice: deprecation.logDeprecationNotice,
 	logUpgradeNotice: deprecation.logUpgradeNotice,
 	logMoreInfoLink: links.logMoreInfoLink,
-	logLinks: links.logLinks
+	logLinks: links.logLinks,
+	terminalLinkHelp: links.terminalLinkHelp
 });
