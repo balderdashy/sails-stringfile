@@ -21,8 +21,8 @@ module.exports = {
 		classrooms: 'Please use instance rooms instead (or raw sails.sockets.*() methods.)',
 		req: {
 			isJson: '`req.isJson` is from Sails v0.8.x, and has been deprecated.  Please use `req.wantsJSON()` instead, or inspect the relevant request headers. (http://sailsjs.org/#!documentation/reference/Request/req.get.html)',
-			isAjax: '`req.isAjax` is from Sails v0.8.x, and has been deprecated.  Please use `req.wantsJSON()` instead, or inspect the relevant request headers. (http://beta.sailsjs.org/#!documentation/reference/Request/req.get.html)',
-		}
+			isAjax: '`req.isAjax` is from Sails v0.8.x, and has been deprecated.  Please use `req.wantsJSON()` instead, or inspect the relevant request headers. (http://beta.sailsjs.org/#!documentation/reference/Request/req.get.html)'
+		},
 		res: {
 			viewExists: 'res.viewExists is from Sails v0.8.x, and has been deprecated.  Please check for the relevant file on disk instead. (res.viewExists was a little-used feature that caused complexities when decoupling views from controllers/actions.)'
 		}
