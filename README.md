@@ -20,7 +20,7 @@ var STRINGFILE = require('sails-stringfile');
 
 // Internally, this module runs node's native `util.format()` method,
 // so you can also template strings:
-var localizedMessage = STRINGFILE('cli.new.success', ['myApp', {some:'stuff'}, 'more stuff'])
+var localizedMessage = STRINGFILE.get('cli.new.success', ['myApp', {some:'stuff'}, 'more stuff'])
 
 // Then, appropriate msg is brought in auf deutsch, espanol, traditional chinese, english, etc.
 console.log(localizedMessage);
