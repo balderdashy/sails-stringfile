@@ -2,13 +2,11 @@ sails-stringfile
 ===================
 
 Localized stringfile containing messages used in Sails command-line interface and runtime.
-This is one part of the effort towards making Sails more accessible to non-native English readers/speakers.
 
+This project is an early-stage work in progress to make all strings used in Sails humanLanguageAgnostic.  That includes console messages, comments in generated code files, and even errors.  This is a big project, but just one small part of the effort towards making Sails more accessible to non-native English readers/speakers.
 
 
 ## How This Module Works
-
-These files are here for future use-- this project is an early-stage work in progress.
 
 + Environment variables are used to determine a user's locale.  (defaults to English)
 
@@ -44,8 +42,6 @@ Current language support _targets_ are:
 
 
 
-
-
 ## How Can I Help?
 
 + The existing strings need to be pulled out of log messages and errors in:
@@ -55,6 +51,8 @@ Current language support _targets_ are:
   + sails-generate-*
   + sails-hook-*
   + sails-adapter-* (adapters)
+
+> See the complete list of modules here: https://github.com/balderdashy/sails/blob/master/MODULES.md
 
 + Code comments and other support files (like README) in newly generated sails modules (or a new project) should be pulled out into the generator scope and brought in using the same mechanism.  This is only relevant for generators:
   + sails-generate-new
