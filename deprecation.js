@@ -1,7 +1,7 @@
 /**
  * Module dependencies
  */
-var _ = require('lodash')
+var _ = require('@sailshq/lodash')
 	, logMoreInfoLink = require('./links').logMoreInfoLink
 	, util = require('util');
 
